@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'portfolio/style.css' %}" type="text/css" rel="stylesheet">
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+    <div id="background">
+        <div id="bg">
+            <div id="nav">
+                <ul id="navlist">
+                    {% if language == 'french' %}
+                        <li id="liZero"><a href="{% url 'english' %}">
+                            English
+                        </a>
+                        <li id="liOne"><a href="{% url 'index' %}">
+                            Accueil
+                        </a>
+                        </li>
+                    {% elif language == 'english' %}
+                        <li id="liZero"><a href="{% url 'index' %}">
+                            Français
+                        </a>
+                        <li id="liOne"><a href="{% url 'english' %}">
+                            Home
+                        </a>
+                        </li>
+                    {% endif %}
+                    <li id="liTwo"><a href="#footer">
+                        Contact
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        {% block body %}
+        {% endblock %}
+            <footer id="footer">
+                <div class="socials" id="socialfooter">
+                    <a href="https://www.instagram.com/davidmenechi/" class="socialbutton"><img src="../../static/portfolio/instagram.png"/>Instagram</a>
+                    <a href="https://www.linkedin.com/in/david-menechi-6828b6231/" class="socialbutton"><img src="../../static/portfolio/linkedin-logo.png"/>Linkedin</a>
+                    <a href="" class="socialbutton"><img src="../../static/portfolio/icons8-téléphone-portable-50.png"/>+33616570358</a>
+                </div>
+                <p>© David Menechi ~ 2023</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

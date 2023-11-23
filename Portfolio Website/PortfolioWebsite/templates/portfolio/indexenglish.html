@@ -1,0 +1,110 @@
+{% extends "portfolio/layout.html" %}
+
+{% block body %}
+    <div id="me">
+        <div id="picjob">
+            <img id="mepic" src="../../static/portfolio/mypic2.png" alt="me"/>
+            <h1 id="jobtitle">Web & Mobile Dev</h1>
+        </div>
+        <div id="description">
+            <h1>What's up ?</h1>
+            <h1>My name is David</h1>
+            <div class="socials">
+                <a href="https://github.com/dvdmnc" class="socialbutton"><img src="../../static/portfolio/github-sign.png"/>Github</a>
+                <a href="https://www.linkedin.com/in/david-menechi-6828b6231/" class="socialbutton"><img src="../../static/portfolio/linkedin-logo.png"/>Linkedin</a>
+            </div>
+        </div>
+    </div>
+    <div class="boxcategory">
+        <div class="boxcategoryspecial">
+            <h1 class="categorytitle">Degrees :</h1>
+            <div class="skillsbox">
+                <ul>
+                    <li><img src="../../static/portfolio/icons8-diplôme-50.png"/>Bachelor's degree in Mathematics</li>
+                    <li><img src="../../static/portfolio/icons8-diplôme-50.png"/>Harvard CS50 Web Programming with Python and Javascript</li>
+                    <li><img src="../../static/portfolio/icons8-diplôme-50.png"/>Harvard CS50 Artificial Intelligence</li>
+                    <li><img src="../../static/portfolio/icons8-diplôme-50.png"/>Harvard CS50 Mobile Programming with React Native</li>
+                </ul>
+            </div>
+        </div>
+        <div class="boxcategoryspecial">
+            <h1 class="categorytitle">Services :</h1>
+            <div class="skillsbox" id="specialskillsbox">
+                <div style="display: block;">
+                    <h3 class="titleskills">Web :</h3>
+                    <ul style="list-style: circle;">
+                        <li>Fixing bugs</li>
+                        <li>Design of one or more static/dynamic pages</li>
+                        <li>Design of small to medium-sized websites (with database capability)</li>
+                    </ul>
+                </div>
+                <div style="display: block;">
+                    <h3 class="titleskills">Mobile :</h3>
+                    <ul style="list-style: circle;">
+                        <li>Fixing bugs</li>
+                        <li>Dynamic menu/page design</li>
+                        <li>Design of a small to medium-sized application (no deployment)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="categorytitle">Skills :</h1>
+    <div class="boxcategory">
+        <div class="skillsbox">
+            <h3 class="titleskills">Front End</h3>
+            <ul>
+                <li><img src="../../static/portfolio/react.png"/>React</li>
+                <li><img src="../../static/portfolio/java-script-logo.png"/>Javascript</li>
+                <li><img src="../../static/portfolio/html.png"/>HTML</li>
+                <li><img src="../../static/portfolio/css-3.png"/>CSS</li>
+            </ul>
+        </div>
+        <div class="skillsbox">
+            <h3 class="titleskills">Back End</h3>
+            <ul>
+                <li><img src="../../static/portfolio/django.png"/>Django</li>
+                <li><img src="../../static/portfolio/sql-server.png">SQLite</li>
+            </ul>
+        </div>
+        <div class="skillsbox">
+            <h3 class="titleskills">Mobile</h3>
+            <ul>
+                <li><img src="../../static/portfolio/react.png"/>React Native</li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="categorytitle">Projects :</h1>
+    <div class="boxcategory">
+        <div class="skillsbox">
+            <h3 class="titleskills">MusiQuiz</h3>
+            <div class="projectdisplay">
+                <ul>
+                    <li><img src="../../static/portfolio/django.png"/>Django</li>
+                    <li><img src="../../static/portfolio/java-script-logo.png">Javascript</li>
+                    <li><img src="../../static/portfolio/html.png"/>HTML</li>
+                    <li><img src="../../static/portfolio/css-3.png"/>CSS</li>
+                    <li><img src="../../static/portfolio/sql-server.png"/>SQLite</li>
+                </ul>
+                <ul>
+                    <li><a href="https://youtu.be/m7cwlxfhftE"><img src="../../static/portfolio/youtube.png"/>Youtube</a></li>
+                    <li><a href="https://github.com/me50/dvdmnc"><img src="../../static/portfolio/github-sign.png"/>GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="skillsbox">
+            <h3 class="titleskills">IDEL Stock</h3>
+            <div class="projectdisplay">
+                <ul>
+                    <li><img src="../../static/portfolio/react.png"/>React Native</li>
+                    <li><img src="../../static/portfolio/react.png"/>React</li>
+                </ul>
+                <ul>
+                    <li><a href="https://youtu.be/V3aTeidOSRQ"><img src="../../static/portfolio/youtube.png"/>Youtube</a></li>
+                    <li><a href="https://github.com/dvdmnc/GestionInventaire"><img src="../../static/portfolio/github-sign.png"/>GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1 class="categorytitle">Contact :</h1>
+{% endblock %}
